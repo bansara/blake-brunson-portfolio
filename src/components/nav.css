@@ -5,7 +5,7 @@ nav {
   top: 0;
   left: 0;
   background-color: var(--bg);
-  padding: 1rem;
+  padding: 2rem 1rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,9 @@ nav {
   align-items: center;
 }
 #nav-header h1 {
-  margin: 0;
+  margin: 1rem 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   width: 100%;
 }
 h1.logo {
@@ -61,19 +63,39 @@ ul > li > a:hover,
   display: none;
 }
 
+.nav-footer span {
+  cursor: pointer;
+  transition: var(--transitionTime);
+}
+
+.nav-footer span:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 768px) {
+  nav {
+    padding: 2rem 0;
+  }
+  #nav-header {
+    height: 100%;
+  }
   #nav-header h1 {
+    width: 100vw;
     text-align: center;
   }
   #burger {
     display: block;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 1rem;
     box-sizing: border-box;
+    cursor: pointer;
+    height: 100%;
   }
   #burger > div {
     width: 3rem;
     height: 4px;
-    margin: 8px 0;
+    margin-bottom: 8px;
     opacity: 1;
     background-color: var(--text);
     transition: var(--transitionTime);
@@ -88,8 +110,8 @@ ul > li > a:hover,
     align-items: center;
     background-color: var(--bg);
     margin: 0;
-    transition: var(--transitionTime);
-    transform: translateX(-100%);
+    transition: var(--transitionTime) ease;
+    transform: translate(-100%, 1rem);
   }
   .nav-content ul > li {
     margin: 2rem 0;
@@ -97,12 +119,12 @@ ul > li > a:hover,
   .nav-footer {
     background-color: var(--bg);
     text-align: center;
-    transition: var(--transitionTime);
-    transform: translateX(-100%);
+    transition: var(--transitionTime) ease;
+    transform: translate(-100%, 1rem);
   }
 
   .nav-open {
-    transform: translateX(0);
+    transform: translate(0, 1rem);
   }
 
   .nav-footer svg {

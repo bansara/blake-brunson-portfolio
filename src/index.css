@@ -1,10 +1,10 @@
 :root {
-  --bg: #425558;
+  --bg: #222;
   --bgLt: #536a6e;
-  --bgDk: #262d2e;
+  --bgDk: #202424;
   --dark: #181a1b;
   --text: whitesmoke;
-  --accent: rgb(240, 234, 183);
+  --accent: #425558;
   --link: rgb(245, 234, 135);
   --transitionTime: 400ms;
 }
