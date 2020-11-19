@@ -1,0 +1,68 @@
+.work {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project {
+  width: 33.3333333%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 1rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  opacity: 0;
+  transition: var(--transitionTime);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.overlay > h2 {
+  transition: var(--transitionTime);
+  transform: translateY(2rem);
+  opacity: 0;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay:hover > h2 {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  display: block;
+  max-height: 600px;
+  overflow-y: hidden;
+}
+
+@media (max-width: 1024px) {
+  .project {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: 100%;
+  }
+}
