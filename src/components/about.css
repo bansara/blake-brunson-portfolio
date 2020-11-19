@@ -1,0 +1,46 @@
+.about {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+}
+.bio-photo,
+.bio-text {
+  box-sizing: border-box;
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+.bio-photo {
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+}
+.bio-photo img {
+  max-width: 100%;
+}
+.bio-text {
+  padding: 1rem;
+}
+.bio-text p {
+  margin: 0;
+}
+#headshot {
+  filter: grayscale(100%);
+  transition: all var(--transitionTime);
+  max-width: 100%;
+}
+
+#headshot:hover {
+  filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+  .bio-photo,
+  .bio-text {
+    width: 100%;
+  }
+}

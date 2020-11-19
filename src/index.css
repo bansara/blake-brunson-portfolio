@@ -1,6 +1,19 @@
+:root {
+  --bg: #425558;
+  --bgLt: #536a6e;
+  --bgDk: #262d2e;
+  --dark: #181a1b;
+  --text: whitesmoke;
+  --accent: rgb(240, 234, 183);
+  --link: rgb(245, 234, 135);
+  --transitionTime: 400ms;
+}
+
 body {
+  background-color: var(--bgDk);
+  color: var(--text);
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +23,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.flex-row {
+  display: flex;
 }
