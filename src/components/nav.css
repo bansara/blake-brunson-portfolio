@@ -28,7 +28,7 @@ div.nav-content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
 }
 #nav {
   list-style: none;
@@ -36,14 +36,14 @@ div.nav-content {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
 }
-ul > li > a,
-ul > li > a:visited {
+ul > a,
+ul > a:visited {
   color: var(--text);
   text-decoration: none;
   transition: var(--transitionTime);
   font-size: 1.4rem;
 }
-ul > li > a:hover,
+ul > a:hover,
 .icons svg:hover {
   color: var(--accent);
 }
@@ -113,9 +113,10 @@ ul > li > a:hover,
   div.nav-content {
     display: block;
     text-align: center;
+    width: 100vw;
     background-color: var(--bg);
     margin: 0;
-    transition: var(--transitionTime) ease;
+    transition: transform var(--transitionTime) ease;
     transform: translate(-100%, 1rem);
     margin-block-start: 0;
     margin-block-end: 0;
@@ -125,7 +126,7 @@ ul > li > a:hover,
     margin: 0;
     height: 100%;
   }
-  .nav-content ul > li {
+  .nav-content ul li {
     box-sizing: border-box;
     background-color: var(--bg);
     padding: 1rem 0;
@@ -133,7 +134,7 @@ ul > li > a:hover,
   div.nav-footer {
     background-color: var(--bg);
     text-align: center;
-    transition: var(--transitionTime) ease;
+    transition: transform var(--transitionTime) ease;
     transform: translate(-100%, 1rem);
     padding: 1rem 0;
   }

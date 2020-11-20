@@ -3,9 +3,10 @@
   --bgLt: #536a6e;
   --bgDk: #202424;
   --dark: #181a1b;
+  --teal: #425558;
   --text: whitesmoke;
-  --accent: #425558;
-  --link: rgb(245, 234, 135);
+  --accent: #647f83;
+  --link: rgb(245, 201, 135);
   --transitionTime: 400ms;
 }
 

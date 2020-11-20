@@ -16,18 +16,24 @@ const Nav = () => {
   const handleOpen = () => {
     // handles mobile nav animation
     if(!open) {
+      // slide in menu
       content.current.classList.add('nav-open');
       footer.current.classList.add('nav-open');
+      // animate burger to X
       b2.current.style.opacity = '0';
       b1.current.style.transform = 'rotate(45deg) translate(12px, 5px)';
       b3.current.style.transform = 'rotate(-45deg) translate(12px, -5px)';
+      // update state
       setOpen(true)
     } else {
+      // slide out menuy
       content.current.classList.remove('nav-open');
       footer.current.classList.remove('nav-open');
+      // animate X to burger
       b2.current.style.opacity = '1';
       b1.current.style.transform = 'rotate(0deg) translate(0,0)';
       b3.current.style.transform = 'rotate(0deg) translate(0,0)';
+      // update state
       setOpen(false)
     }
   }
@@ -35,7 +41,7 @@ const Nav = () => {
   const teal = () => {
     root.style.setProperty('--bg', '#425558');
     root.style.setProperty('--text', 'whitesmoke');
-    root.style.setProperty('--accent', 'rgb(240, 234, 183)');
+    root.style.setProperty('--accent', '#C9C5BA');
   }
   const light = () => {
     root.style.setProperty('--bg', 'white');
@@ -45,7 +51,7 @@ const Nav = () => {
   const dark = () => {
     root.style.setProperty('--bg', '#222');
     root.style.setProperty('--text', 'whitesmoke');
-    root.style.setProperty('--accent', '#536a6e');
+    root.style.setProperty('--accent', '#647f83');
   }
 
   return ( 
@@ -60,15 +66,21 @@ const Nav = () => {
       </div>
       <div className="nav-content" ref={content}>
         <ul id="nav">
-          <li>
-            <Link to="work">Work</Link>
-          </li>
-          <li>
-            <Link to="press">Press</Link>
-          </li>
-          <li>
-            <Link to="about">About</Link>
-          </li>
+            <Link to="work">
+              <li>
+                Work
+              </li>
+            </Link>
+            <Link to="press">
+              <li>
+                Press
+              </li>
+            </Link>
+            <Link to="about">
+              <li>
+                About
+              </li>
+            </Link>
         </ul>
       </div>
       <div className="nav-footer" ref={footer}>

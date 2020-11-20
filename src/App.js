@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import './App.css';
-import { Nav, About, Work } from './components';
+import { Nav, About, Work, Press } from './components';
 
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <div className="content">
             <Switch>
               <Route path='/work' component={Work} />
-              <Route path='/press' render={() => <h1>Press</h1>} />
+              <Route path='/press' component={Press} />
               <Route path='/about' component={About} />
               <Redirect to='/' />
             </Switch>

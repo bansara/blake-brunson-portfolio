@@ -1,0 +1,42 @@
+h2 span {
+  padding-bottom: 6px;
+  border-bottom: 3px solid var(--accent);
+}
+.press-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+  /* justify-content: center; */
+}
+.press-col-container {
+  display: flex;
+}
+.press-col {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.press-col a,
+.press-col a:visited {
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transitionTime);
+}
+
+.press-col a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .press-col {
+    width: 100%;
+    padding: 2rem;
+  }
+  .press-col .press-col {
+    margin-right: 0.4rem;
+    padding: 0;
+  }
+}
