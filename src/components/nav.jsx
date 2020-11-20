@@ -11,6 +11,7 @@ const Nav = () => {
   const b3 = useRef(null);
   const content = useRef(null);
   const footer = useRef(null);
+  const root = document.documentElement;
 
   const handleOpen = () => {
     // handles mobile nav animation
@@ -32,19 +33,16 @@ const Nav = () => {
   }
 
   const teal = () => {
-    const root = document.documentElement;
     root.style.setProperty('--bg', '#425558');
     root.style.setProperty('--text', 'whitesmoke');
     root.style.setProperty('--accent', 'rgb(240, 234, 183)');
   }
   const light = () => {
-    const root = document.documentElement;
     root.style.setProperty('--bg', 'white');
-    root.style.setProperty('--text', '#111');
+    root.style.setProperty('--text', '#222');
     root.style.setProperty('--accent', '#536a6e');
   }
   const dark = () => {
-    const root = document.documentElement;
     root.style.setProperty('--bg', '#222');
     root.style.setProperty('--text', 'whitesmoke');
     root.style.setProperty('--accent', '#536a6e');

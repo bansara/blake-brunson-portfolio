@@ -30,7 +30,7 @@ div.nav-content {
   flex-direction: column;
   width: 100vw;
 }
-ul#nav {
+#nav {
   list-style: none;
   padding-inline-start: 0;
   text-transform: uppercase;
@@ -74,14 +74,18 @@ ul > li > a:hover,
 
 @media (max-width: 768px) {
   nav {
+    display: block;
     padding: 2rem 0;
   }
   #nav-header {
     height: 100%;
+    width: 100%;
+    background-color: var(--bg);
   }
   #nav-header h1 {
     width: 100vw;
     text-align: center;
+    margin: 1em;
   }
   #burger {
     display: block;
@@ -106,24 +110,35 @@ ul > li > a:hover,
     z-index: 10;
     padding: 1rem 0;
   }
-  .nav-content {
-    align-items: center;
+  div.nav-content {
+    display: block;
+    text-align: center;
     background-color: var(--bg);
     margin: 0;
     transition: var(--transitionTime) ease;
     transform: translate(-100%, 1rem);
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .nav-content ul {
+    display: block;
+    margin: 0;
+    height: 100%;
   }
   .nav-content ul > li {
-    margin: 2rem 0;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    padding: 1rem 0;
   }
-  .nav-footer {
+  div.nav-footer {
     background-color: var(--bg);
     text-align: center;
     transition: var(--transitionTime) ease;
     transform: translate(-100%, 1rem);
+    padding: 1rem 0;
   }
 
-  .nav-open {
+  div.nav-open {
     transform: translate(0, 1rem);
   }
 
