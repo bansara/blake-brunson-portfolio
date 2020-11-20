@@ -40,7 +40,7 @@ const Nav = () => {
   const light = () => {
     root.style.setProperty('--bg', 'white');
     root.style.setProperty('--text', '#222');
-    root.style.setProperty('--accent', '#536a6e');
+    root.style.setProperty('--accent', '#6e6e30');
   }
   const dark = () => {
     root.style.setProperty('--bg', '#222');

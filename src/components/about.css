@@ -39,7 +39,8 @@
   font-size: 1.2rem;
 }
 .bio-text h2 span {
-  border-bottom: 2px solid var(--accent);
+  padding-bottom: 6px;
+  border-bottom: 4px solid var(--accent);
 }
 .bio-text p {
   margin: 0;
