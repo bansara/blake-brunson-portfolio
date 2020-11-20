@@ -50,7 +50,7 @@ ul > li > a:hover,
 .icons svg {
   color: var(--text);
   margin-right: 1rem;
-  font-size: 2.5em;
+  font-size: 2em;
   transition: var(--transitionTime);
 }
 
