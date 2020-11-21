@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import './App.css';
-import { Nav, About, Work, Press } from './components';
+import { Nav, About, Work, Press, Footer } from './components';
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
               <Redirect to='/' />
             </Switch>
         </div>
+        <Footer />
       </Router>
     </div>
   );
