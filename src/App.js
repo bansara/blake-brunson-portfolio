@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Redirect, Route } from 'react-router-dom';
 import './App.css';
-import { Nav, About, Work, Press, Footer } from './components';
+import { Nav, About, Work, Press, Footer, Home } from './components';
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
         <Nav />
         <div className="content">
             <Switch>
+              <Route path='/' exact component={Home} />
               <Route path='/work' component={Work} />
               <Route path='/press' component={Press} />
               <Route path='/bio' component={About} />
