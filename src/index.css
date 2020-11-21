@@ -10,22 +10,34 @@
   --transitionTime: 400ms;
 }
 
+@font-face {
+  font-family: "Marzo";
+  src: url("marzo.ttf") format("truetype");
+}
+h1 {
+  font-family: "Marzo", sans-serif;
+  font-weight: bold;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+}
+p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
 body {
   background-color: var(--bg);
   color: var(--text);
   margin: 0;
-  font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Playfair Display", "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
 .flex-row {
   display: flex;
 }

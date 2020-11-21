@@ -8,5 +8,9 @@
   width: 100%;
   margin-left: 240px;
   background-color: var(--bg);
-  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  .content {
+    margin-top: 64px;
+  }
 }

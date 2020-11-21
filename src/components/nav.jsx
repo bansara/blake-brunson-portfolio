@@ -21,8 +21,8 @@ const Nav = () => {
       footer.current.classList.add('nav-open');
       // animate burger to X
       b2.current.style.opacity = '0';
-      b1.current.style.transform = 'rotate(45deg) translate(12px, 5px)';
-      b3.current.style.transform = 'rotate(-45deg) translate(12px, -5px)';
+      b1.current.style.transform = 'rotate(45deg) translate(9px, 5px)';
+      b3.current.style.transform = 'rotate(-45deg) translate(9px, -5px)';
       // update state
       setOpen(true)
     } else {
@@ -62,23 +62,25 @@ const Nav = () => {
           <div id="b2" ref={b2}></div>
           <div id="b3" ref={b3}></div>
         </div>
-        <h1 className='logo'>BLAKE BRUNSON</h1>
+        <Link to="/">
+          <h1 className='logo'>BLAKE BRUNSON</h1>
+        </Link>
       </div>
       <div className="nav-content" ref={content}>
         <ul id="nav">
-            <Link to="work">
+            <Link to="work" onClick={handleOpen}>
               <li>
                 Work
               </li>
             </Link>
-            <Link to="press">
+            <Link to="press" onClick={handleOpen}>
               <li>
                 Press
               </li>
             </Link>
-            <Link to="about">
+            <Link to="bio" onClick={handleOpen}>
               <li>
-                About
+                Bio
               </li>
             </Link>
         </ul>

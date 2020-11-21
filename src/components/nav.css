@@ -24,6 +24,11 @@ nav {
 h1.logo {
   color: var(--accent);
 }
+#nav-header a,
+#nav-header a:visited {
+  color: var(--text);
+  text-decoration: none;
+}
 div.nav-content {
   flex: 1;
   display: flex;
@@ -34,7 +39,7 @@ div.nav-content {
   list-style: none;
   padding-inline-start: 0;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 ul > a,
 ul > a:visited {
@@ -82,10 +87,11 @@ ul > a:hover,
     width: 100%;
     background-color: var(--bg);
   }
-  #nav-header h1 {
-    width: 100vw;
+  #nav-header a {
+    width: 100%;
     text-align: center;
-    margin: 1em;
+    margin: 0 1em;
+    font-size: 1.5rem;
   }
   #burger {
     display: block;
@@ -97,9 +103,9 @@ ul > a:hover,
     height: 100%;
   }
   #burger > div {
-    width: 3rem;
-    height: 4px;
-    margin-bottom: 8px;
+    width: 2.5rem;
+    height: 2px;
+    margin: 8px 0;
     opacity: 1;
     background-color: var(--text);
     transition: var(--transitionTime);

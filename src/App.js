@@ -12,7 +12,7 @@ function App() {
             <Switch>
               <Route path='/work' component={Work} />
               <Route path='/press' component={Press} />
-              <Route path='/about' component={About} />
+              <Route path='/bio' component={About} />
               <Redirect to='/' />
             </Switch>
         </div>

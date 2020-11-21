@@ -1,4 +1,5 @@
 h2 span {
+  box-sizing: border-box;
   padding-bottom: 6px;
   border-bottom: 3px solid var(--accent);
 }
