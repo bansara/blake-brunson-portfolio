@@ -17,9 +17,9 @@ const Work = () => {
     <div className="work">
       {
         interiors.map((src, i) => (
-          <div className={`project ${i % 2 === 0 ? 'no-border' : ''}`} key={i}>
+          <div className='project' key={i}>
             <img src={src} alt="interior design by Blake Brunson"/>
-            <div className={`info ${i % 3 !== 0 ? 'no-name' : ''}`}>
+            <div className='info'>
               <h2>
                 Project Name
               </h2>
