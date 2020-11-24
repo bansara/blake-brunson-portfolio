@@ -1,42 +1,45 @@
+import ad1114 from '../images/press/ad1114.jpg';
+import hb1114 from '../images/press/hb1114.jpg';
+import hb0817 from '../images/press/hb0817.jpg';
+import perigold2 from '../images/press/perigold2.jpg';
+import theEdit from '../images/press/theEdit.jpg';
+import ad0717 from '../images/press/ad0717.jpg';
+
 export const links = [
   {
-    name: 'Architectual Digest',
-    href: 'https://www.architecturaldigest.com/contributor/david-kaihoi-lauren-carras-blake-brunson-and-miles-redd'
-  },
-  {
-    name: 'Architectual Digest',
-    href: 'https://www.architecturaldigest.com/story/miles-redd-england-travel-diary-day-one'
-  },
-  {
-    name: 'Architectual Digest',
-    href: 'https://www.architecturaldigest.com/story/miles-redd-england-travel-diary-day-two'
-  },
-  {
-    name: 'Architectual Digest',
-    href: 'https://www.architecturaldigest.com/story/miles-redd-england-travel-diary-day-three'
-  },
-  {
-    name: 'Architectual Digest',
-    href: 'https://www.architecturaldigest.com/story/miles-redd-england-travel-diary-day-four'
+    name: 'Architectural Digest',
+    href: 'https://www.architecturaldigest.com/story/tour-miles-redds-new-manhattan-office',
+    src: ad0717
   },
   {
     name: 'House Beautiful',
-    href: 'https://www.housebeautiful.com/design-inspiration/house-tours/g2033/miles-redd-colorful-manhattan-apartment/'
+    href: 'https://www.housebeautiful.com/home-remodeling/interior-designers/a9561/blake-brunson-next-wave/',
+    src: hb0817
   },
   {
     name: 'House Beautiful',
-    href: 'https://www.housebeautiful.com/home-remodeling/interior-designers/a9561/blake-brunson-next-wave/'
+    href: 'https://www.housebeautiful.com/design-inspiration/house-tours/g2033/miles-redd-colorful-manhattan-apartment/',
+    src: hb1114
   },
   {
     name: 'The Edit',
-    href: 'https://livetheedit.com/2020/06/redd-kaihoi-auction-tips-design/'
+    href: 'https://livetheedit.com/2020/06/redd-kaihoi-auction-tips-design/',
+    src: theEdit
   },
   {
-    name: 'Architectural Digest',
-    href: 'https://www.architecturaldigest.com/story/tour-miles-redds-new-manhattan-office'
+    name: 'Architectual Digest',
+    href: 'https://www.architecturaldigest.com/contributor/david-kaihoi-lauren-carras-blake-brunson-and-miles-redd',
+    src: ad1114
   },
   {
-    name: 'Business of Home',
-    href: 'https://businessofhome.com/scenes/new-class-of-next-wavers-honored'
-  }
+    name: 'Perigold',
+    href: 'https://milled.com/perigold/just-added-desks-from-the-best-in-the-business-JYqX1hejesbAupev',
+    src: perigold2
+  },
+
+  // { NO GOOD IMAGE FOR THIS
+  //   name: 'Business of Home',
+  //   href: 'https://businessofhome.com/scenes/new-class-of-next-wavers-honored'
+  // },
+ 
 ]
