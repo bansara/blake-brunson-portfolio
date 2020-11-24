@@ -1,7 +1,7 @@
 :root {
-  --bg: #222;
+  --bg: #101011;
   --bgLt: #536a6e;
-  --bgDk: #202424;
+  --bgDk: #101011;
   --dark: #181a1b;
   --teal: #425558;
   --text: whitesmoke;
@@ -9,7 +9,6 @@
   --link: rgb(245, 201, 135);
   --transitionTime: 400ms;
 }
-
 @font-face {
   font-family: "Marzo";
   src: url("marzo.ttf") format("truetype");
@@ -23,8 +22,8 @@ h2 {
 }
 p {
   font-family: "Playfair Display", serif;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.4rem;
 }
 body {
   background-color: var(--bg);

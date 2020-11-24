@@ -11,16 +11,16 @@ nav {
   display: flex;
   align-items: center;
 }
-#nav-header h1 {
-  margin: 1rem;
-  margin-block-start: 0;
-  margin-block-end: 0;
+#mobile-logo {
+  color: var(--accent);
+  display: none;
   width: 100%;
+  text-align: center;
 }
 #logo {
   font-family: "Marzo";
   color: var(--accent);
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 #nav-header a,
 #nav-header a:visited {
@@ -30,6 +30,7 @@ nav {
 div.nav-content {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 100%;
   flex: 1;
 }
@@ -40,14 +41,13 @@ div.nav-content {
   font-family: "Playfair Display", sans-serif;
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  margin-right: 2rem;
+  justify-content: center;
   background-color: var(--bg);
-  /* justify-content: space-around; */
-  /* width: 100%; */
 }
 #nav li {
   margin: 0 2rem;
+  display: flex;
+  align-items: center;
 }
 ul > a,
 ul > a:visited {
@@ -55,35 +55,23 @@ ul > a:visited {
   text-decoration: none;
   transition: var(--transitionTime);
   font-size: 1.4rem;
+  display: flex;
+  align-items: center;
 }
 
 ul > a:hover,
-.icons svg:hover {
+#nav svg:hover {
   color: var(--accent);
 }
-.icons svg {
+#nav svg {
   color: var(--text);
-  margin: 0 1rem;
   font-size: 2rem;
   transition: var(--transitionTime);
-}
-
-#c {
-  margin: 12px 0;
-  font-size: small;
+  margin-right: 1rem;
 }
 
 #burger {
   display: none;
-}
-
-.nav-footer span {
-  cursor: pointer;
-  transition: var(--transitionTime);
-}
-
-.nav-footer span:hover {
-  color: var(--accent);
 }
 
 @media (max-width: 1024px) {
@@ -151,7 +139,10 @@ ul > a:hover,
     box-sizing: border-box;
     background-color: var(--bg);
     padding: 1rem 0;
+    width: 100%;
+    justify-content: center;
   }
+
   div.icons {
     background-color: var(--bg);
     text-align: center;
@@ -167,26 +158,34 @@ ul > a:hover,
     transform: translate(0, 1rem);
   }
 
-  .nav-footer svg {
+  #nav svg {
     margin: 0 2rem;
+  }
+  li#icons {
+    width: 100%;
+    margin: 0;
   }
   .content {
     margin-left: 0;
     margin: 4rem 0;
     width: 100vw;
   }
-  #logo {
-    transform: translateX(-24px);
+  .nav-content ul li#logo {
+    display: none;
+  }
+  #mobile-logo {
+    display: inline-block;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 768px) {
-  #logo {
+  #mobile-logo {
     font-size: 2.5rem;
   }
 }
 @media (max-width: 420px) {
-  #logo {
+  #mobile-logo {
     font-size: 2rem;
   }
 }

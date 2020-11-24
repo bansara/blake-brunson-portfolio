@@ -7,11 +7,10 @@
   align-items: center;
   box-sizing: border-box;
 }
-
 #name {
   font-size: 5rem;
   display: flex;
-  color: var(--accent);
+  color: var(--text);
   margin: 0;
   text-shadow: none;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
@@ -29,14 +28,12 @@
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   }
 }
-
 #lake,
 #runson {
   min-width: 0;
   animation-duration: 6s;
   animation-name: fadein;
 }
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -50,7 +47,6 @@
     opacity: 1;
   }
 }
-
 #b {
   animation-duration: 3s;
   animation-name: slidein;
@@ -66,7 +62,6 @@
     transform: translateX(0);
   }
 }
-
 #designer {
   font-size: 2em;
   margin: 0;
@@ -84,7 +79,6 @@
     opacity: 1;
   }
 }
-
 @media (max-width: 1280px) {
   #name {
     font-size: 4em;

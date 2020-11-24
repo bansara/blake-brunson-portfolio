@@ -4,7 +4,7 @@
   box-sizing: border-box;
   padding: 1.5rem 1rem;
   columns: 3;
-  column-gap: 0rem;
+  column-gap: 0.5rem;
 }
 
 .project {
@@ -13,12 +13,15 @@
   height: auto;
   box-sizing: border-box;
   position: relative;
-  padding: 1rem;
+  padding: 0.5rem;
   transition: var(--transitionTime);
+  filter: grayscale(100%);
+  margin-bottom: 0.5rem;
 }
 
 .project:hover {
   border: 4px solid var(--accent);
+  filter: grayscale(0);
 }
 .project.no-border:hover {
   border: none;
@@ -31,19 +34,23 @@
   margin: 0;
   display: block;
   overflow-y: hidden;
-  filter: grayscale(100%);
   transition: var(--transitionTime);
   cursor: pointer;
+  border: none;
+  box-sizing: border-box;
 }
 
 .project:hover img {
-  filter: grayscale(0);
+  border: 2px solid var(--accent);
+  padding: 1rem;
 }
 
 .project .info {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  bottom: 1rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   transition: var(--transitionTime);
   break-inside: avoid;
   opacity: 0;
@@ -52,7 +59,12 @@
   align-items: center;
   padding: 1rem;
   box-sizing: border-box;
-  width: calc(100% - 2rem);
+}
+
+.project:hover .info {
+  bottom: calc(1.5rem + 2px);
+  left: calc(1.5rem + 2px);
+  width: calc(100% - 3rem - 4px);
 }
 
 .project .info.no-name {
