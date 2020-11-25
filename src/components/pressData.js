@@ -4,6 +4,7 @@ import hb0817 from '../images/press/hb0817.jpg';
 import perigold2 from '../images/press/perigold2.jpg';
 import theEdit from '../images/press/theEdit.jpg';
 import ad0717 from '../images/press/ad0717.jpg';
+import BOH from '../images/press/BOH.jpg';
 
 export const links = [
   {
@@ -22,24 +23,26 @@ export const links = [
     src: hb1114
   },
   {
+    name: 'Perigold',
+    href: 'https://milled.com/perigold/just-added-desks-from-the-best-in-the-business-JYqX1hejesbAupev',
+    src: perigold2
+  },
+  {
     name: 'The Edit',
     href: 'https://livetheedit.com/2020/06/redd-kaihoi-auction-tips-design/',
-    src: theEdit
+    src: theEdit,
+    shouldUseOverlay: true
   },
   {
     name: 'Architectual Digest',
     href: 'https://www.architecturaldigest.com/contributor/david-kaihoi-lauren-carras-blake-brunson-and-miles-redd',
     src: ad1114
   },
-  {
-    name: 'Perigold',
-    href: 'https://milled.com/perigold/just-added-desks-from-the-best-in-the-business-JYqX1hejesbAupev',
-    src: perigold2
+  { 
+    name: 'Business of Home',
+    href: 'https://businessofhome.com/scenes/new-class-of-next-wavers-honored',
+    src: BOH,
+    shouldUseOverlay: true
   },
-
-  // { NO GOOD IMAGE FOR THIS
-  //   name: 'Business of Home',
-  //   href: 'https://businessofhome.com/scenes/new-class-of-next-wavers-honored'
-  // },
  
 ]

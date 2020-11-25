@@ -11,7 +11,7 @@ const Home = () => {
         <h1 id="runson">RUNSON</h1>
       </div>
       <div id="title">
-        <h2 id="designer">INTERIOR DESIGNER</h2>
+        <h4 id="designer">INTERIOR DESIGNER</h4>
       </div>
     </div>
    );

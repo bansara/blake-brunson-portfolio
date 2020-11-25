@@ -7,26 +7,41 @@
   box-sizing: border-box;
 }
 .press-link {
+  break-inside: avoid;
   max-width: 100%;
   height: auto;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   position: relative;
+  border: none;
+  box-sizing: border-box;
+  transition: var(--transitionTime);
+  filter: grayscale(100%);
+}
+.press-link:hover {
+  border: 4px solid var(--accent);
+  padding: 0.5rem;
+  filter: grayscale(0);
 }
 .press-link img {
   width: 100%;
-  filter: grayscale(100%);
   transition: var(--transitionTime);
 }
-.press-link img:hover {
-  filter: grayscale(0);
-}
-.press-link > .press-info {
+
+.press-link .press-info {
   position: absolute;
-  bottom: 0;
+  bottom: 0.5rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: whitesmoke;
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 0 0 1rem;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: var(--transitionTime);
+}
+
+.press-link:hover .press-info {
+  opacity: 1;
+  width: calc(100% - 1rem);
 }
 
 @media (max-width: 1280px) {

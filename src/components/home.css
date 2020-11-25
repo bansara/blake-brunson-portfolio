@@ -12,8 +12,7 @@
   display: flex;
   color: var(--text);
   margin: 0;
-  text-shadow: none;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 25px var(--text);
   animation-name: shadow;
   animation-duration: 6s;
 }
@@ -25,7 +24,7 @@
     text-shadow: none;
   }
   to {
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 25px var(--text);
   }
 }
 #lake,
@@ -67,6 +66,7 @@
   margin: 0;
   animation-name: designer;
   animation-duration: 8s;
+  color: var(--secondary);
 }
 @keyframes designer {
   from {

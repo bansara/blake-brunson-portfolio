@@ -1,18 +1,14 @@
 import React, { useState, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import Tooltip from '@material-ui/core/Tooltip';
-import BrightnessHighIcon from '@material-ui/icons/BrightnessHigh';
-import Brightness4Icon from '@material-ui/icons/Brightness4';
+import { Mail, Insta, ThemeToggle } from './icons';
 import './nav.css';
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
   const { pathname } = useLocation();
-  console.log(pathname)
   const b1 = useRef(null);
   const b2 = useRef(null);
   const b3 = useRef(null);
@@ -26,11 +22,13 @@ const Nav = () => {
       root.style.setProperty('--bg', 'white');
       root.style.setProperty('--text', '#101011');
       root.style.setProperty('--accent', '#6e6e30');
+      root.style.setProperty('--secondary', 'rgb(155, 155, 155)');
       setTheme('light');
     } else {
       root.style.setProperty('--bg', '#101011');
       root.style.setProperty('--text', 'whitesmoke');
       root.style.setProperty('--accent', '#647f83');
+      root.style.setProperty('--secondary', 'rgb(85, 85, 85)');
       setTheme('dark');
     }
   }
@@ -93,19 +91,19 @@ const Nav = () => {
             <li id="icons">
               <a href="https://www.instagram.com/blakebrunson/" target="_blank" rel="noreferrer">
                 <Tooltip title="Instagram">
-                  <InstagramIcon />
+                  <Insta />
                 </Tooltip>
               </a>
               <a href="mailto:brunson.blake@gmail.com?subject=Website%20Contact" target="_blank" rel="noreferrer">
                 <Tooltip title="Email Blake">
-                  <MailOutlineIcon />
+                  <Mail />
                 </Tooltip>
               </a>
-              <Tooltip title="Toggle light/dark theme">
-                {
-                  theme === 'dark' ? <Brightness4Icon onClick={handleTheme} /> : <BrightnessHighIcon onClick={handleTheme} />
-                }
-              </Tooltip>
+              <span>
+                <Tooltip title="Toggle Light / Dark theme">
+                  <ThemeToggle onClick={handleTheme} />
+                </Tooltip>
+              </span>
             </li>
         </ul>
       </div>

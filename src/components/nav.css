@@ -65,7 +65,7 @@ ul > a:hover,
 }
 #nav svg {
   color: var(--text);
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: var(--transitionTime);
   margin-right: 1rem;
 }

@@ -33,7 +33,7 @@
   box-sizing: border-box;
   display: block;
   border: 2px solid var(--accent);
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .bio-text {
   flex-direction: column;
