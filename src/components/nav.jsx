@@ -21,13 +21,13 @@ const Nav = () => {
     if (theme === "dark") {
       root.style.setProperty("--bg", "white");
       root.style.setProperty("--text", "#101011");
-      root.style.setProperty("--accent", "#3c988f");
+      // root.style.setProperty("--accent", "#3c988f");
       root.style.setProperty("--secondary", "rgb(155, 155, 155)");
       setTheme("light");
     } else {
       root.style.setProperty("--bg", "#101011");
       root.style.setProperty("--text", "whitesmoke");
-      root.style.setProperty("--accent", "#2d7972");
+      // root.style.setProperty("--accent", "#2d7972");
       root.style.setProperty("--secondary", "rgb(85, 85, 85)");
       setTheme("dark");
     }
