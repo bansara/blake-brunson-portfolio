@@ -44,15 +44,20 @@
   margin: 0;
   margin-block-start: 0;
   margin-block-end: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1ch;
 }
-.bio-text h2 span {
-  padding-bottom: 6px;
+/* .bio-text h2 span {
+   color: var(--accent); 
   border-bottom: 3px solid var(--accent);
-}
+} */
 .bio-text p {
   margin: 0;
   width: 75%;
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1ch;
 }
 @media (max-width: 1024px) {
   .about {
@@ -79,5 +84,8 @@
 @media (max-width: 768px) {
   .bio-photo .border {
     max-width: 100%;
+  }
+  .bio-text h2 {
+    margin: 1em 0;
   }
 }

@@ -1,7 +1,7 @@
 :root {
   --bg: #101011;
   --text: whitesmoke;
-  --accent: #647f83;
+  --accent: #3c988f;
   --secondary: rgb(85, 85, 85);
   --transitionTime: 400ms;
 }
@@ -14,10 +14,10 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Quattrocento", serif;
 }
 p {
-  font-family: "Playfair Display", serif;
+  font-family: "Quattrocento", serif;
   font-size: 1rem;
   line-height: 1.4rem;
 }
@@ -25,7 +25,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
   margin: 0;
-  font-family: "Playfair Display", "Times New Roman", Times, serif;
+  font-family: "Quattrocento", "Times New Roman", Times, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

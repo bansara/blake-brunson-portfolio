@@ -1,10 +1,12 @@
 .press-container {
-  width: 67%;
+  width: 100%;
+  max-width: 1440px;
   min-height: calc(100vh - 4rem);
   padding: 2rem;
   columns: 3;
   column-gap: 2rem;
   box-sizing: border-box;
+  margin-top: 8rem;
 }
 .press-link {
   break-inside: avoid;
