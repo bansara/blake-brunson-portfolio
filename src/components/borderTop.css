@@ -1,0 +1,12 @@
+#border-top__container {
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#border-top__image {
+  max-width: 100%;
+}
+#border-bottom__image {
+  margin: 4rem auto 2rem;
+}

@@ -3,10 +3,11 @@ nav {
   height: 4rem;
   background-color: var(--bg);
   padding: 3rem 1rem 1rem;
-  margin: 0 0 4rem;
+  margin: 2rem auto;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 #nav-header {
   display: flex;
@@ -33,7 +34,7 @@ nav {
 div.nav-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100%;
   flex: 1;
 }
@@ -44,6 +45,7 @@ div.nav-content {
   font-family: "Quattrocento", sans-serif;
   display: flex;
   width: 100%;
+  margin-left: 5.125rem;
   justify-content: center;
   background-color: var(--bg);
 }
