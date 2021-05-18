@@ -2,25 +2,45 @@ import React from "react";
 import BorderTop from "./borderTop";
 import BorderBottom from "./borderBottom";
 import "./work.css";
-import interior from "../images/interior.jpg";
-import interior2 from "../images/interior2.jpg";
-import interior3 from "../images/interior3.jpg";
-import interior4 from "../images/interior4.jpg";
-import interior5 from "../images/interior5.jpg";
-import interior6 from "../images/interior6.jpg";
-import interiorA from "../images/interiorA.jpg";
-import interiorB from "../images/interiorB.jpg";
+import i1 from "../images/1.jpg";
+import i2 from "../images/3.jpg";
+import i3 from "../images/2.jpg";
+import i4 from "../images/4.jpg";
+import i5 from "../images/5.jpg";
+import i6 from "../images/6.jpg";
+import i7 from "../images/7.jpg";
+import i8 from "../images/8.jpg";
+import i9 from "../images/9.jpg";
+import i10 from "../images/10.jpg";
+import i11 from "../images/11.jpg";
+import i12 from "../images/12.jpg";
+import i13 from "../images/13.jpg";
+import i14 from "../images/14.jpg";
+import i15 from "../images/15.jpg";
+import i16 from "../images/16.jpg";
+import i17 from "../images/17.jpg";
+import i18 from "../images/18.jpg";
 
 const Work = () => {
   const interiors = [
-    interior,
-    interiorA,
-    interior2,
-    interiorB,
-    interior3,
-    interior4,
-    interior5,
-    interior6,
+    i1,
+    i2,
+    i3,
+    i4,
+    i5,
+    i6,
+    i7,
+    i8,
+    i9,
+    i10,
+    i11,
+    i12,
+    i13,
+    i14,
+    i15,
+    i16,
+    i17,
+    i18,
   ];
   return (
     <>
@@ -29,9 +49,6 @@ const Work = () => {
         {interiors.map((src, i) => (
           <div className="project" key={i}>
             <img src={src} alt="interior design by Blake Brunson" />
-            <div className="info">
-              <h2>Project Name</h2>
-            </div>
           </div>
         ))}
       </div>
