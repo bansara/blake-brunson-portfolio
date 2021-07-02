@@ -84,15 +84,12 @@ const Nav = () => {
                 <Insta />
               </Tooltip>
             </a>
-            <a
-              href="mailto:brunson.blake@gmail.com?subject=Website%20Contact"
-              target="_blank"
-              rel="noreferrer"
+            <span
             >
-              <Tooltip title="Email Blake">
+              <Tooltip title="Copy Email">
                 <Mail />
               </Tooltip>
-            </a>
+            </span>
             <span>
               <Tooltip title="Toggle Light / Dark theme">
                 <ThemeToggle onClick={handleTheme} />

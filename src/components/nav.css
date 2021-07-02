@@ -3,7 +3,8 @@ nav {
   height: 4rem;
   background-color: var(--bg);
   padding: 3rem 1rem 1rem;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -92,6 +93,7 @@ ul > a:hover,
   }
   #nav {
     display: block;
+    margin: 0;
   }
   #nav-header {
     height: 100%;

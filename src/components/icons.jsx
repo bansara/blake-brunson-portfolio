@@ -1,6 +1,9 @@
 import React from 'react';
 import { AiOutlineInstagram, AiOutlineMail } from "react-icons/ai";
 import { ImBrightnessContrast } from "react-icons/im";
+import toast, { Toaster } from 'react-hot-toast';
+
+const notify = () => toast('Email copied to clipboard.');
 
 /*
 * THIS IS NECESSARY TO MAKE THE TOOLTIP WORK WITH CUSTOM CHILD ELEMENTS
@@ -17,8 +20,16 @@ export const ThemeToggle = React.forwardRef(function ThemeToggle(props, ref) {
 });
 export const Mail = React.forwardRef(function Mail(props, ref) {
   return (
-    <span {...props} ref={ref}>
+    <span 
+      {...props} 
+      ref={ref} 
+      onClick={() => {
+        navigator.clipboard.writeText("bb@blakebrunson.com ")
+          .then(notify)
+      }}
+    >
       <AiOutlineMail />
+      <Toaster />
     </span>
   )
 });
