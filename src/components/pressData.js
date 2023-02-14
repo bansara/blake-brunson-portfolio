@@ -5,7 +5,7 @@ import perigold2 from "../images/press/perigold2.jpg";
 import theEdit from "../images/press/theEdit.jpg";
 import ad0717 from "../images/press/ad0717.jpg";
 import BOH from "../images/press/BOH.jpg";
-import nyt from "../images/press/NYTClip.jpg";
+import nyt from "../images/press/NYT.jpg";
 import the7 from "../images/press/Forbes.jpeg";
 
 export const links = [

@@ -7,7 +7,7 @@ import "./nav.css";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const { pathname } = useLocation();
   const b1 = useRef(null);
   const b2 = useRef(null);
@@ -84,8 +84,7 @@ const Nav = () => {
                 <Insta />
               </Tooltip>
             </a>
-            <span
-            >
+            <span>
               <Tooltip title="Copy Email">
                 <Mail />
               </Tooltip>
