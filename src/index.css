@@ -1,8 +1,8 @@
 :root {
-  --bg: #101011;
-  --text: whitesmoke;
+  --bg: #fff;
+  --text: #101011;
   --accent: #4a807b;
-  --secondary: rgb(85, 85, 85);
+  --secondary: rgb(155, 155, 155);
   --transitionTime: 400ms;
 }
 @font-face {
